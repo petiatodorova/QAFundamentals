@@ -583,7 +583,8 @@ Scrum
     
     Product Backlog:
     A high-level list with broad descriptions of all potential features for the product (backlog items).
-    Maintained throughout the entire project. Prioritized by the product owner. Open and editable in terms of years.
+    Maintained throughout the entire project. Prioritized by the product owner. 
+    Open and editable in terms of years.
     
     Sprint Backlog:
     The list of work the team must address during the next sprint. 
