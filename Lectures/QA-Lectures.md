@@ -1,8 +1,8 @@
 # 3 Introduction to Software Development and Testing
-3 types software:
-=> Retail 
-=> Web 
-=> Mobile
+- 3 вида software - Retail | Web | Mobile
+
+
+
 
 # 4 Test cases, test scenarios, test execution. 
 
@@ -65,9 +65,11 @@ Functional and Non-Functional testing
 ==> Component Testing: Unit tests focus on aspects internal to the component itself.
 
     --> Testing separate components/units of the software. 
-    --> Software units (components): Modules, units, programs, functions, Classes – in Object Oriented Programming
-    --> Individual testing: Components are tested individually and Isolated from all other software components
-    --> Isolation - Prevents external influences on the components. Interaction with neighbors is not performed
+    --> Software units (components): Modules, units, programs, functions, Classes in OOP
+    --> Individual testing: Components are tested individually and Isolated 
+    from all other software components
+    --> Isolation - Prevents external influences on the components. 
+    Interaction with neighbors is not performed
 
 
 ==> Integration Testing: Supposes that components are already tested individually
@@ -75,12 +77,14 @@ Functional and Non-Functional testing
     --> System integration testing: Testing the integration of systems and packages
     --> Testing interfaces to external organizations/3rd parties
     --> Expose defects in the interfaces and interaction between integrated components
-    ===> The Big Bang approach: All components or modules are integrated simultaneously, after which everything is tested as a whole. Disadvantage: difficult to trace the cause of failures
+    ===> The Big Bang approach: All components or modules are integrated simultaneously, 
+    after which everything is tested as a whole. 
+    Disadvantage: difficult to trace the cause of failures
     
-    ===> The Incremental approach: All components are integrated one by one and a testing is carried out after each step.
-    Different Incremental approaches:
-        - The Top-Down approach: The high level logic and flows are tested first - the low level components are tested last.
-        - The Bottom-Up approach: The most complex / high level functionalities are tested last.
+    ===> The Incremental approach: All components are integrated one by one and a testing
+    is carried out after each step.
+    => The Top-Down approach: The high level logic and flows are tested first.
+    => The Bottom-Up approach: The most complex/ high level functionalities are tested last.
 
 
 ==> System Testing: 
@@ -100,17 +104,23 @@ Functional and Non-Functional testing
 ## Test Types
 ==> Structural testing
 
-    Often referred to as ‘white-box’ or ‘glass-box’ testing. Uses information about the internal code structure or architecture.
-    Tools can be used to measure the code coverage of elements, such as Statements or Decisions / Branches.
+    Often referred to as ‘white-box’ or ‘glass-box’ testing. 
+    Uses information about the internal code structure or architecture.
+    Tools can be used to measure the code coverage of elements, 
+    such as Statements or Decisions / Branches.
 
 ==> Change related testing
 
     --> Re-testing: 
-    After a bug has been detected and fixed, the software should be re-tested. To confirm that the original defect has been successfully removed after applying the fix. Also known as Confirmation testing.
+    After a bug has been detected and fixed, the software should be re-tested. 
+    To confirm that the original defect has been successfully removed after applying the fix. 
+    Also known as Confirmation testing.
     
     --> Regression Testing:
-    Performed after modifications of the code. Testing for newly introduced faults as a result of the changes made to the system.
-    May be performed at all test levels. The reason for Regression testing is that changed or new code might affect untouched functionalities.
+    Performed after modifications of the code. 
+    Testing for newly introduced faults as a result of the changes made to the system.
+    May be performed at all test levels. The reason for Regression testing 
+    is that changed or new code might affect untouched functionalities.
     Testing only code, that is changed, is not enough!
 
 ==> Risk-Based Testing
@@ -128,7 +138,8 @@ Functional and Non-Functional testing
 
 ==> Non-functional Testing
 
-    Testing Non-functional Software Characteristics. “How well" the system should carry out its functions. Non-functional characteristics:
+    Testing Non-functional Software Characteristics. “How well" the system should carry out its functions. 
+    Non-functional characteristics:
     --> Reliability
     --> Usability
     --> Accessibility
@@ -151,14 +162,21 @@ Functional and Non-Functional testing
     = Error Rates
     = Requests per second
     = Concurrent Users Count
-    Performance: Do we need to reduce the time needed to execute a request ?
-    Scalability: Can the system handle the anticipated number of concurrent users during peak load in production?
-    Stability: Does the application suffer from memory leaks when under load for extended periods of time?
+    
+    => Performance: 
+    Do we need to reduce the time needed to execute a request ?
+    => Scalability: 
+    Can the system handle the anticipated number of concurrent users during peak load in production?
+    => Stability: 
+    Does the application suffer from memory leaks when under load for extended periods of time?
 
      
     
     --> Stress Testing - stability, Under what conditions will the system fail?
-    The goals of Stress testing is to ensure the software does not crash in conditions of insufficient computational resources (such as memory or disk space). It involves testing beyond normal operational capacity, often to a breaking point, in order to observe the results.
+    The goals of Stress testing is to ensure the software does not crash in conditions 
+    of insufficient computational resources (such as memory or disk space). 
+    It involves testing beyond normal operational capacity, 
+    often to a breaking point, in order to observe the results.
 
     
 
@@ -175,7 +193,8 @@ Functional and Non-Functional testing
     = Unexpected Execution of User Inputs
 
     --> Cross Site Scripting
-    = Injecting Malicious Client Side Script into Web PagesThe malicious code along with the original webpage gets displayed in the web client
+    = Injecting Malicious Client Side Script into Web Pages.
+      The malicious code along with the original webpage gets displayed in the web client
     
     --> Parameter Manipulation
     = Cookie Manipulation
@@ -224,16 +243,20 @@ Functional and Non-Functional testing
     
     Some of the most used Black Box testing techniques are:
 
-=> Equivalence Partitioning: Classes of values: Separating all test cases in different classes of values.
+ => Equivalence Partitioning: Classes of values: 
+    Separating all test cases in different classes of values.
 
-=> Boundary Value Analysis. Analysis of the limits. 
-    Definition: As we know the limits of the availability of the software we test before the limits, between the limits and after the limits of its possibilities
+ => Boundary Value Analysis. Analysis of the limits. 
+    Definition: As we know the limits of the availability of the software we test before the limits, 
+    between the limits and after the limits of its possibilities
 
 
-=> Decision Tables: “Reason – Effect” table. Combination of Conditions and Actions regarding the established rules for the software we test. 
+ => Decision Tables: “Reason – Effect” table. 
+    Combination of Conditions and Actions regarding the established rules for the software we test. 
     
     
-=> State Transition Tables: There’s a limit of conditions and between them the software should have special behaviour.
+ => State Transition Tables: 
+    There’s a limit of conditions and between them the software should have special behaviour.
     Main components and behavior:
     = Conditions that the system can have.
     = Transitions from one state to another
@@ -264,7 +287,9 @@ What Do We Report Defects Against?
 
 
 What is a bug tracking system?
-    A bug tracking system or defect tracking system is a software application that keeps track of reported software bugs in software development projects. It may be regarded as a type of issue tracking system.
+    A bug tracking system or defect tracking system is a software application that keeps track 
+    of reported software bugs in software development projects. 
+    It may be regarded as a type of issue tracking system.
     
     An incident report usually includes:
     = Date and time of the failure
@@ -277,21 +302,24 @@ What is a bug tracking system?
 Severity and priority of the defect
     = Sometimes classified by testers
     = Sometimes a bug triage committee is responsible for that
-    = Determines also the risks, costs, opportunities and benefits associated with fixing or not fixing the defect
+    = Determines also the risks, costs, opportunities and benefits 
+    associated with fixing or not fixing the defect
 
 
 What is a defect "severity"?
     The degree of impact on the operation of the system
     Possible severity classification could be:
     1 – Blocking: Stops the user from using the feature as it is meant to be used. No reasonable workaround.
-    2 – Critical: Data corruption. Easily and repeatedly throws an exception. No reasonable workaround. Feature does not work as expected.
+    2 – Critical: Data corruption. Easily and repeatedly throws an exception. No reasonable workaround. 
     3 – High: Throws an exception when not following the happy path. Confusing UI. Has a reasonable workaround.
-    4 – Medium: Feature works off the happy path with minor issues. Small UI issues. One or more reasonable workarounds.
+    4 – Medium: Feature works off the happy path with minor issues. Small UI issues. 
+        One or more reasonable workarounds.
     5 – Low: Cosmetic issues. Many workarounds. Low visibility to users.
 
 
 Defect Priority
-    Indicates how quickly the particular problem should be corrected. Possible priority classification could be:
+    Indicates how quickly the particular problem should be corrected. 
+    Possible priority classification could be:
     1 – Immediate
     2 – Next Release
     3 – On Occasion
@@ -305,23 +333,29 @@ Defect Lifecycle States
     => Test: The bug has been fixed and is released to testing team
     => Rejected: If the developer feels that the bug is not genuine, he rejects the bug
     => Duplicate: The bug is repeated twice or the two bugs mention the same concept of the bug
-    => Verified: Once the bug is fixed and the status is changed to “TEST”, the tester tests the bug. If the bug is not present in the software, he approves that the bug is fixed.
-    => Reopened: The bug still exists even after the bug is fixed by the developer. The bug traverses the life cycle once again
+    => Verified: Once the bug is fixed and the status is changed to “TEST”, the tester tests the bug. 
+    If the bug is not present in the software, he approves that the bug is fixed.
+    => Reopened: The bug still exists even after the bug is fixed by the developer. 
+    The bug traverses the life cycle once again
     => Closed: The bug is fixed, tested and approved
 
 
 Distributed Version Control: 
-    The complete codebase - including its full history - is mirrored on every developer's computer. There is still a master copy of the code base, but it’s kept on a client machine rather than a server. 
+    The complete codebase - including its full history - is mirrored on every developer's computer. 
+    There is still a master copy of the code base, but it’s kept on a client machine rather than a server. 
     
 
 Centralized Version Control: 
-    A centralized version control system works on a client-server model. There is a single, (centralized) master copy of the code base, and pieces of the code that are being worked on are typically locked, (or “checked out”) so that only one developer is allowed to work on that part of the code at any one time. 
+    A centralized version control system works on a client-server model. 
+    There is a single, (centralized) master copy of the code base, and pieces of the code 
+    that are being worked on are typically locked, (or “checked out”) 
+    so that only one developer is allowed to work on that part of the code at any one time. 
 
 
 # 8 Software Development and Testing Lifecycle
 
 What is a Development Methodology?
-    => A development methodology is a set of practices and procedures for organizing the software development process
+    => A development methodology is a set of practices and procedures for organizing the software dev process
     => A set of rules that developers have to follow
     => A set of conventions the organization decides to follow
     => A systematical, engineering approach for organizing and managing software projects
@@ -338,7 +372,8 @@ Phases of the SDLC
     
     
 Development Tasks
-    1. Requirements specification: Specifying customer requirements. Defining the system’s purpose, characteristics and features
+    1. Requirements specification: Specifying customer requirements. Defining the system’s purpose, 
+       characteristics and features
     2. Functional system design: Mapping functions and dialogues of the new system.
     3. Technical system design:
         => Designing the implementation of the system. 
@@ -346,19 +381,28 @@ Development Tasks
         => Decomposing the system into smaller understandable subsystems 
         => System architecture
     4. Component specification: Defining each subsystem. Task, behavior, inner structure, interfaces.
-    5. Programming: Implementing each specified component in a programming language. Modules, units, classes
+    5. Programming: Implementing each specified component in a programming language. 
+       Modules, units, classes
  
  
  Testing Tasks
-    1. Component (unit) test: Verifies each software component does it perform correctly according to its specification.
-    2. Integration test: Checks groups of components do they collaborate correctly according to the technical system design.
-    3. System test: Verifies the system as a whole does it meet the specified system requirements.
-    4. Acceptance test: Does the system meet the customer requirements.
+    1. Component (unit) test: 
+       Verifies each software component does it perform correctly according to its specification.
+    2. Integration test: 
+       Checks groups of components do they collaborate correctly according to the technical system design.
+    3. System test: 
+       Verifies the system as a whole does it meet the specified system requirements.
+    4. Acceptance test: 
+       Does the system meet the customer requirements.
     
     
 Validation vs. Verification
-    1. Validation: Are we building the right system? Does the product (or a part of it) solve its task? Is this product suitable for its intended use?
-    2. Verification: Are we building the system right? Does the product meet its specification? Has it been achieved correctly and completely.
+    1. Validation: 
+       Are we building the right system? 
+       Does the product (or a part of it) solve its task? 
+    2. Verification: 
+       Are we building the system right? 
+       Does the product meet its specification? Has it been achieved correctly and completely.
     
 
 Development Methodologies
@@ -389,7 +433,8 @@ The Waterfall Model
 V Model Development Process
 The model presents two branches: 
         => Development tasks: The process of design and implementation.
-        => Testing tasks: Verification and integration into bigger subsystems. Both are corresponding activities of equal importance
+        => Testing tasks: Verification and integration into bigger subsystems. 
+        Both are corresponding activities of equal importance
         
         V Model - Advantages:
         => Simple and easy to use
@@ -445,7 +490,8 @@ Project Control List
         
         
 Types of Iterative Models
-    => Agile Development - “Our highest priority is to satisfy the customer through early and continuous delivery of valuable software“
+    => Agile Development - “Our highest priority is to satisfy the customer 
+    through early and continuous delivery of valuable software“
     Individuals and interactions -- over -- Processes and tools
     Working software             -- over -- Comprehensive documentation
     Customer collaboration       -- over -- Contract negotiation
@@ -467,7 +513,8 @@ Types of Iterative Models
     
     
 Extreme Programming
-    A type of agile software development. Intended to improve software quality and responsiveness to changing customer requirements 
+    A type of agile software development. Intended to improve software quality 
+    and responsiveness to changing customer requirements 
     Advocates frequent "releases" in short development cycles (time boxes). 
     Intended to improve productivity 
     Checkpoints where new customer requirements can be adopted.
@@ -480,7 +527,8 @@ Extreme Programming
     
     
 Kanban
-    Kanban is a method of managing activities with an emphasis on delivery just in time without team members being overloaded.
+    Kanban is a method of managing activities with an emphasis on delivery 
+    just in time without team members being overloaded.
     The name – literally translated from Japanese means “Alert card”
     Requires real-time communication of capacity and full transparency of work
     Project management tool designed to help visualize work
@@ -491,31 +539,42 @@ Kanban
     => There are no meetings as planning and retrospectives
     => There are no predefined teams – each member of the team canwork on more than one project
     => Synchronized task progress
-    => Visual Signals. Columns. Work In Progress (WIP) Limits. “Set the maximum amount of work that can exist in each status of a workflow”
+    => Visual Signals. Columns. Work In Progress (WIP) Limits. 
+    “Set the maximum amount of work that can exist in each status of a workflow”
     Commitment point. Delivery point
     
     
 Scrum
-    A framework within which people can address complex problems, and productively and creative delivery products of the highest possible value
+    A framework within which people can address complex problems, and productively and creative 
+    delivery products of the highest possible value
     Scrum is an iterative and incremental agile software development methodology for managing product development
     An agile process that allows us to focus on delivering the highest business value in the shortest time
     It allows us to rapidly and repeatedly inspect actual working software (every two weeks to one month)
     
     => The business sets the priorities
     => Teams self-organize to determine the best way to deliver the highest priority features
-    => Every two weeks to a month anyone can see real working software and decide to release it as is or continue to enhance it for another sprint
+    => Every two weeks to a month anyone can see real working software and decide to release 
+    it as is or continue to enhance it for another sprint
     
     Roles:
-    => Scrum Master – Links the team to the product owner. Maintains the Scrum processes. Scrum Master facilitates work rather than managing it. He's not the team leader. Acts as a buffer between the team and any distracting influences
+    => Scrum Master – Links the team to the product owner. Maintains the Scrum processes. 
+    Scrum Master facilitates work rather than managing it. He's not the team leader. 
+    Acts as a buffer between the team and any distracting influences
     
-    => Product Owner – represents the stakeholders. Represents the voice of the customer. He is accountable for ensuring that the Team delivers value to the business. Writes customer-centric items (typically user stories). Prioritizes them, and adds them to the product backlog 
+    => Product Owner – represents the stakeholders. Represents the voice of the customer. 
+    He is accountable for ensuring that the Team delivers value to the business. 
+    Writes customer-centric items (typically user stories). 
+    Prioritizes them, and adds them to the product backlog 
     
     => Team – a group of about 7 people
-    The Team is responsible for delivering the product. Typically made up of 5–9 people. Team members have cross-functional skills 
+    The Team is responsible for delivering the product. Typically made up of 5–9 people. 
+    Team members have cross-functional skills 
     The team does the actual work. Analyze, design, develop, test, technical communication, document, etc.
     
     => Burndown charts
-    Scrum uses a burndown chart during sprints to let team members see progress at a glance. Rather than displaying completed tasks, the burndown chart visualizes what’s left to be done. It should be continuously updated to help team members manage their workflow.
+    Scrum uses a burndown chart during sprints to let team members see progress at a glance. 
+    Rather than displaying completed tasks, the burndown chart visualizes what’s left to be done. 
+    It should be continuously updated to help team members manage their workflow.
     
     
     Scrum Terminology:
@@ -527,12 +586,15 @@ Scrum
     Maintained throughout the entire project. Prioritized by the product owner. Open and editable in terms of years.
     
     Sprint Backlog:
-    The list of work the team must address during the next sprint. Features are broken down into tasks between four and sixteen hours of work.
+    The list of work the team must address during the next sprint. 
+    Features are broken down into tasks between four and sixteen hours of work.
     Tasks on the sprint backlog are never assigned in terms of weeks.
-    The sprint burn down chart is a publicly displayed chart. Shows remaining work in the sprint backlog. Updated every day, it gives a simple view of the sprint progress.
+    The sprint burn down chart is a publicly displayed chart. Shows remaining work in the sprint backlog. 
+    Updated every day, it gives a simple view of the sprint progress.
     
     Bug Backlog
-    A type of backlog which includes bugs only. Can be part of the Product Backlog. Bugs are listed by their priority.
+    A type of backlog which includes bugs only. Can be part of the Product Backlog. 
+    Bugs are listed by their priority.
     Includes bugs reported by customers. Bugs are prioritized by Product Owner, supported by QA lead.
     
     Scrum Meetings:
@@ -559,12 +621,23 @@ Scrum
 
 --> The Kanban: STRICT LIMITS on the amount of work in progress at any given time.
     --> Continuous improvement:
-    The Kanban methodology requires strict limits on the amount of work in progress at any given time. Teams assign a limit to the number of cards in any active-work columns. When the limit is met, no new work can enter the column until a task is completed and moved to the next column. Again, this system helps teams identify bottlenecks, and it encourages individual contributors to rally together to fix them. 
+    The Kanban methodology requires strict limits on the amount of work in progress at any given time. 
+    Teams assign a limit to the number of cards in any active-work columns. 
+    When the limit is met, no new work can enter the column until a task is completed and 
+    moved to the next column. Again, this system helps teams identify bottlenecks, and it   
+    encourages individual contributors to rally together to fix them. 
     
 --> Scrum: TWO-WEEK SPRINTS
-    It is another Agile methodology that uses an incremental approach to work in order to complete projects more quickly. If you're looking at Kanban vs. Scrum, Kanban is primarily concerned with process improvements, while Scrum is concerned with getting more work done faster. 
+    It is another Agile methodology that uses an incremental approach to work in order 
+    to complete projects more quickly. If you're looking at Kanban vs. 
+    Scrum, Kanban is primarily concerned with process improvements, while Scrum is concerned 
+    with getting more work done faster. 
     --> Sprints
-    Scrum uses TWO-WEEK SPRINTS to get work done. These sprints are planned in advance, executed, and then reviewed at the end of the two-week period. During sprint planning, the team creates a sprint backlog. The team completes these backlog tasks during the sprint, managing the work among themselves. Team members also hold a 15-minute Scrum meeting each day of the sprint. 
+    Scrum uses TWO-WEEK SPRINTS to get work done. These sprints are planned in advance, 
+    executed, and then reviewed at the end of the two-week period. During sprint planning, 
+    the team creates a sprint backlog. The team completes these backlog tasks during the sprint, 
+    managing the work among themselves. Team members also hold a 15-minute 
+    Scrum meeting each day of the sprint. 
     
     
 Which method should you use?
@@ -575,8 +648,9 @@ Which method should you use?
     
 ----------------------------------------------    
     
-Waterfall works best for projects completed in a linear fashion and does not allow going back to a prior phase. 
-Agile focuses on adaptive, simultaneous workflows. Agile methods break projects into smaller, iterative periods. 
+Waterfall works best for projects completed in a linear fashion and does not allow 
+going back to a prior phase. Agile focuses on adaptive, simultaneous workflows. 
+Agile methods break projects into smaller, iterative periods. 
 Kanban is primarily concerned with process improvements, while 
 Scrum is concerned with getting more work done faster.
 
@@ -596,76 +670,4 @@ The phases of Software Testing Life Cycle
 Entry criteria – rules that needs to be covered so to start the testing activities.
 Exit criteria – rules that defined that the testing process can be considered as completed.
 
-    
-
-
-
-
-
-
-
-
-
-
     => Burn Down Chart: Simple view of the sprint progress
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-    => Rapid Application Development (RAD)
-    => Rational Unified Process (RUP)
-
-
-
-
-
-
-
-
-        
-
-
-
-
-
-         
-
-
-
-
-    
-
-
-
-
-
-
-    
-
-
