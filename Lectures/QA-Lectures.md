@@ -1,8 +1,8 @@
 # 3 Introduction to Software Development and Testing
-- 3 вида software - Retail | Web | Mobile
-
-
-
+3 types software:
+=> Retail 
+=> Web 
+=> Mobile
 
 # 4 Test cases, test scenarios, test execution. 
 
